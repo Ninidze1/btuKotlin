@@ -1,7 +1,7 @@
 fun main() {
 
     val num1 = Point(7,19)
-    val num2 = Point(15,-5)
+    val num2 = Point(-15,-5)
 
     println(num1.toString())
     println(num1 == num2)
@@ -28,8 +28,8 @@ open class Point(x: Int, y: Int) {
     }
 
     fun carryover(): String {
-        return "($abscissa;$ordinate) წერტილის y ღერძის მიმართ გადატანისას მიიღება (-$abscissa;$ordinate) წერტილი"
+        val a = -abscissa
+        return "($abscissa;$ordinate) წერტილის y ღერძის მიმართ გადატანისას მიიღება ($a;$ordinate) წერტილი"
     }
-
 
 }
